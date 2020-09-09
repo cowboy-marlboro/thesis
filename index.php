@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>HELLO</title>
-</head>
-<body>
-</body>
-</html>
