@@ -1,0 +1,172 @@
+/* обнуление */
+*{padding: 0;margin: 0;border: 0;font-family: 'Inter', sans-serif;}
+*,*:before,*:after{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside {display: block;}
+html,body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+/* ----------------------------------------- */
+
+// ИМПОРТ ШРИФТОВ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// ИМПОРТ ШРИФТОВ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+body{
+    @media screen and(max-width:1000px){
+        &.lock{
+            overflow: hidden;
+        }
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+ .burger-menu{
+    display: none;
+    @media screen and(max-width:1000px){
+        display: block;
+        position: relative;
+        left: 15px;
+        width: 30px;
+        height: 20px;
+        & span{
+            position: absolute;
+            background-color: #000;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            transition: all .3s ease 0s;
+        }
+        &:before,
+        &:after{
+            content: '';
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all .3s ease 0s;
+        }
+        &:before{
+            top: 0;
+        }
+
+        &:after{
+            bottom: 0;
+        }
+        &.active span{
+            transform: scale(0);
+        }
+
+        &.active:before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &.active:after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+    }
+}
+
+.logo{
+    @media screen and(max-width:500px){
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 15px;
+    }
+}
+
+.nav-panel{
+    display: flex;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    @media screen and(max-width: 1000px){
+        display: block;
+        position: fixed;
+        color: #fff;
+        top: 50px;
+		left: -100%;
+		width: 100%;
+        height: 100%;
+        background-color: rgb(5, 113, 255);
+        padding-top: 60px;
+        transition: all .3s ease 0s;
+        &.active{
+            left: 0;
+        }
+    }
+}
+
+.text-items-main{
+    @media screen and(max-width:500px){
+        display: none;
+    }
+}
+
+.text-items{
+    margin: 0px 60px 0px 0px;
+    font-size: 14px;
+    &-main{
+        font-size: 14px;
+        max-width: 320px;
+    }
+    &:last-child{
+        margin: 0px 0px 0px 0px;
+    }
+    @media screen and(max-width: 1000px){
+        position: relative;
+        top: -40px;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+.btn{
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: transparent;
+    padding: 3px 6px;
+    @media screen and(max-width: 1000px){
+        position: relative;
+        top: -40px;
+        color: white;
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+
+.button{
+    &-none{
+        display: none;
+        @media screen and(max-width: 1000px) {
+            display: block;
+        }
+    }
+    @media screen and(max-width: 1000px) {
+        display: none;
+    }
+}
