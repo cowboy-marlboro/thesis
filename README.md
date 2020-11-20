@@ -1,2 +1,2 @@
 # thesis
-This our thesis. It was website about tourism.
+This our thesis. It was website about Information Security.
