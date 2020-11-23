@@ -1,36 +1,39 @@
 <?php
 
 include_once 'header.php';
+include_once 'db_conn.php';
 
 ?>
 
 
-<?
-// Страница авторизации
-
-// Соединямся с БД
-$dbconn = pg_pconnect("host=10.2.1.83 port=5432 dbname=theis user=retr0 password=Beroslav43");
-
-
+<?php
+// //Страница авторизации
+//
+//// Соединямся с БД
+$dbconn = pg_pconnect("host=10.2.1.13 port=5432 dbname=diplom user=postgres password=Beroslav43");
+//
+//
 if (isset($_POST['login_btn'])) {
-    // Вытаскиваем из БД запись, у которой логин равняеться введенному
-    $query = pg_query($dbconn, "SELECT email, passwd FROM users WHERE login='" . pg_escape_string($dbconn, $_POST['login']) . "' LIMIT 1");
-    $data = pg_fetch_assoc($query);
-
-    // Сравниваем пароли
-    if ($data['passwd'] === md5(md5($_POST['password']))) {
-
-        // Ставим куки
-        setcookie("id", $data['login'], time() + 60 * 60 * 24 * 30, "/");
-        setcookie("hash", $hash, time() + 60 * 60 * 24 * 30, "/", null, null, true); // httponly !!!
-
-        // Переадресовываем браузер на страницу проверки нашего скрипта
-        header("Location: check.php");
-        exit();
-    } else {
-        echo "Вы ввели неправильный логин/пароль";
-    }
+    // Это пример его не трогать!!!
+    //$query = pg_query($dbconn, "SELECT email, passwd FROM users WHERE login='" . pg_escape_string($dbconn, $_POST['login']) . "' LIMIT 1");
+    $login = pg_query($dbconn, "SELECT email FROM users");
+    $pass = pg_query($dbconn, "SELECT password FROM users");
 }
+//    // Вытаскиваем из БД запись, у которой логин равняеться введенному
+
+//    $data = pg_fetch_assoc($query);
+//
+//    // Сравниваем пароли
+//    if ($data['passwd'] === md5(md5($_POST['password']))) {
+//
+//        // Переадресовываем браузер на страницу проверки нашего скрипта
+//        header("Location: check.php");
+//        exit();
+//    } else {
+//        echo "Вы ввели неправильный логин/пароль";
+//    }
+//}
+
 ?>
 
 
@@ -38,7 +41,7 @@ if (isset($_POST['login_btn'])) {
         <div class="logo-text-block">
             <p class="logo-text">Вход в учётную запись.</p>
         </div>
-        <form class="form" method="post" action="#">
+        <form class="form" method="post" action="">
             <div class="input login">
                 <input name="login" class="input-login" type="email" required placeholder=" ">
                 <label class="form-label">Введите вашу почту.</label>
@@ -58,4 +61,5 @@ if (isset($_POST['login_btn'])) {
 <?php
 
 include_once 'footer.php';
+
 ?>

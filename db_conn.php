@@ -1,6 +1,6 @@
 <?php
 
-$dbconn = pg_pconnect("host=sheep port=5432 dbname=mary user=lamb password=foo");
+$dbconn = pg_pconnect("host=10.2.1.13 port=5432 dbname=diplom user=postgres password=Beroslav43");
 
 if ($dbconn){
     echo "YES< BETCH";
