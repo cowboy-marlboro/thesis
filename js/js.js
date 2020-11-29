@@ -1,10 +1,14 @@
-function getClick() {
-    document.querySelector('.user').onclick = () => {
-        document.querySelector('.drop-menu').classList.toggle('d-block');
+function сlick() {
+    let userClick = document.querySelector('.user');
+    let dropMenuClick = document.querySelector('.drop-menu');
+    let body = document.querySelector('body');
+
+    userClick.onclick = () => {
+        dropMenuClick.classList.toggle('d-block');
     }
 }
 
-getClick();
+сlick();
 
 function getBurger() {
     document.querySelector('.burger-menu').onclick = () => {

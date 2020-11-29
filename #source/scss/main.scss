@@ -16,6 +16,10 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 /* ----------------------------------------- */
 
+html{
+    scroll-behavior: smooth;
+}
+
 .main-fon-nav{
     height: 48px;
 }
@@ -268,4 +272,97 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
         }
     }
 }
+
+
+.main-title-two{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-title-two{
+    text-align: center;
+    .text-title-two-main{
+        @media screen and(max-width:662px){
+            max-width: 633px;
+            font-size: 32px;
+            @media screen and(max-width: 295px){
+                font-size: 26px;
+            }
+        }
+        font-size: 40px;
+        color: black;
+        font-weight: 600;
+    }
+    .text-title-two{
+        @media screen and(max-width:662px){
+            font-size: 24px;
+            @media screen and(max-width: 295px){
+                font-size: 20px;
+            }
+        }
+        margin-top: 25px;
+        max-width: 633px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #a6a6a7;
+    }
+}
+
+.two{
+    background-color: white;
+}
+
+.block-cards{
+    padding: 70px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .one-card{
+        margin: 0px 5px 0px 0px;
+        @media screen and(max-width:1479px){
+            margin: 0px 0px 0px 0px;
+        }
+        width: 735px;
+        height: 635px;
+        background-color: #f2f2f2;
+        background-image: url(../img/two/pnoneBlock.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (max-width:305px){
+            background-size: contain;
+        }
+        border-radius: 18px;
+    }
+    .two-card{
+        @media screen and(max-width:1479px){
+            margin: 10px 0px 0px 0px;
+        }
+        margin: 0px 0px 0px 5px;
+        width: 735px;
+        height: 635px;
+        background-color: black;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .info-title{
+            max-width: 580px;
+            margin: 0 auto;
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+        }
+        .info-text{
+            max-width: 525px;
+            margin: 0 auto;
+            font-size: 24px;
+            color: #bfbfbf;
+            text-align: center;
+            margin-top: 35px;
+        }
+    }
+}
+
 
