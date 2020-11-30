@@ -113,9 +113,9 @@ html {
     position: fixed;
     top: -100%;
     width: 100%;
-    height: 35%;
+    min-height: 200px;
     background-color: black;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
   }
   .list.active {
     top: 46px;
@@ -299,16 +299,16 @@ html {
   background-repeat: no-repeat;
 }
 
-.main-title {
+.main-title-m {
   padding: 29.2vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-title .icon {
+.main-title-m .icon {
   margin: 0px 0px 25px 0px;
 }
-.main-title .inf-sec {
+.main-title-m .inf-sec {
   text-align: center;
   font-size: 72px;
   color: #ffffff;
@@ -316,17 +316,17 @@ html {
   margin: 0px 0px 40px 0px;
 }
 @media screen and (max-width: 664px) {
-  .main-title .inf-sec {
+  .main-title-m .inf-sec {
     font-size: 52px;
   }
 }
 @media screen and (max-width: 664px) and (max-width: 490px) {
-  .main-title .inf-sec {
+  .main-title-m .inf-sec {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 664px) and (max-width: 490px) and (max-width: 296px) {
-  .main-title .inf-sec {
+  .main-title-m .inf-sec {
     margin: 0px 0px 30px 0px;
     font-size: 25px;
   }
@@ -351,46 +351,56 @@ html {
   }
 }
 
-.main-title-two {
+.main-title {
   padding-top: 100px;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 662px) {
+  .main-title {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 662px) and (max-width: 366px) {
+  .main-title {
+    padding-top: 30px;
+  }
+}
 
-.text-title-two {
+.text-title-block {
   text-align: center;
 }
-.text-title-two .text-title-two-main {
+.text-title-block .text-title-main {
   font-size: 40px;
   color: black;
   font-weight: 600;
 }
 @media screen and (max-width: 662px) {
-  .text-title-two .text-title-two-main {
+  .text-title-block .text-title-main {
     max-width: 633px;
-    font-size: 32px;
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 662px) and (max-width: 295px) {
-  .text-title-two .text-title-two-main {
-    font-size: 26px;
-  }
-}
-.text-title-two .text-title-two {
-  margin-top: 25px;
-  max-width: 633px;
-  font-size: 28px;
-  font-weight: 600;
-  color: #a6a6a7;
-}
-@media screen and (max-width: 662px) {
-  .text-title-two .text-title-two {
+@media screen and (max-width: 662px) and (max-width: 366px) {
+  .text-title-block .text-title-main {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 662px) and (max-width: 295px) {
-  .text-title-two .text-title-two {
-    font-size: 20px;
+.text-title-block .text-title-w {
+  padding-top: 25px;
+  max-width: 633px;
+  margin: 0 auto;
+  font-size: 28px;
+  color: black;
+}
+@media screen and (max-width: 662px) {
+  .text-title-block .text-title-w {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 662px) and (max-width: 366px) {
+  .text-title-block .text-title-w {
+    font-size: 18px;
   }
 }
 
@@ -408,7 +418,7 @@ html {
   margin: 0px 5px 0px 0px;
   width: 735px;
   height: 635px;
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   background-image: url(../img/two/pnoneBlock.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -454,4 +464,100 @@ html {
   color: #bfbfbf;
   text-align: center;
   margin-top: 35px;
+}
+
+.block-card {
+  margin: 60px 0px;
+  width: 100%;
+  min-height: 680px;
+  background-color: #f7f7f7;
+  border-radius: 18px;
+}
+@media screen and (max-width: 620px) {
+  .block-card {
+    min-height: 480px;
+  }
+}
+.block-card .card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.block-card .card-title-text {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 564px) {
+  .block-card .card-title-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 564px) and (max-width: 390px) {
+  .block-card .card-title-text {
+    font-size: 20px;
+  }
+}
+.block-card .flex-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.block-card .card-image {
+  background-image: url(../img/3/macBook.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 1000px;
+  height: 540px;
+}
+@media screen and (max-width: 1443px) {
+  .block-card .card-image {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .block-card .card-image {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 700px) and (max-width: 620px) {
+  .block-card .card-image {
+    height: 340px;
+  }
+}
+@media screen and (max-width: 700px) and (max-width: 620px) and (max-width: 400px) {
+  .block-card .card-image {
+    height: 200px;
+  }
+}
+.block-card .card-info {
+  width: 444px;
+}
+
+.row-info-card {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.row-info-card .red-block {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #f55766;
+  border-radius: 6px;
+}
+.row-info-card .gray-block {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #d1d1d1;
+  border-radius: 6px;
+}
+@media screen and (max-width: 344px) {
+  .row-info-card .color-block-text {
+    font-size: 12px;
+  }
 }
