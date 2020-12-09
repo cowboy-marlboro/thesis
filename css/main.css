@@ -90,6 +90,11 @@ html {
   margin: 0 auto;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .wrapper {
   width: 100%;
   position: fixed;
@@ -457,6 +462,16 @@ html {
   text-align: center;
   font-weight: 600;
 }
+@media screen and (max-width: 564px) {
+  .block-cards .two-card .info-title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 564px) and (max-width: 390px) {
+  .block-cards .two-card .info-title {
+    font-size: 20px;
+  }
+}
 .block-cards .two-card .info-text {
   max-width: 525px;
   margin: 0 auto;
@@ -464,6 +479,17 @@ html {
   color: #bfbfbf;
   text-align: center;
   margin-top: 35px;
+}
+@media screen and (max-width: 564px) {
+  .block-cards .two-card .info-text {
+    font-size: 20px;
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 564px) and (max-width: 390px) {
+  .block-cards .two-card .info-text {
+    font-size: 18px;
+  }
 }
 
 .block-card {
@@ -560,4 +586,172 @@ html {
   .row-info-card .color-block-text {
     font-size: 12px;
   }
+}
+
+.main-black-card {
+  margin: 100px 0px;
+  background-color: black;
+  border-radius: 18px;
+  min-height: 810px;
+}
+.main-black-card .title-black-card {
+  max-width: 536px;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+.main-black-card .style-title-black-card {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.row-cards-black {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 10px;
+}
+.row-cards-black .card-in-black {
+  flex: 1 1 auto;
+  margin: 10px 10px;
+  border-radius: 18px;
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row-cards-black .card-in-black .icon-image {
+  padding: 35px 0px;
+}
+.row-cards-black .card-in-black .txt-title-black-card {
+  font-size: 30px;
+}
+.row-cards-black .card-in-black .txt-title-black-card h3 {
+  font-weight: 600;
+}
+.row-cards-black .card-in-black .txt-black-card li {
+  margin: 28px 0px;
+  font-size: 30px;
+}
+.row-cards-black .card-in-black .txt-black-card-two li {
+  margin: 28px 0px;
+  font-size: 30px;
+  width: 328px;
+}
+.row-cards-black .card-in-black .txt-black-card-three li {
+  margin: 28px 0px;
+  font-size: 30px;
+  width: 319px;
+}
+
+.product-title-block {
+  padding: 95px 0px;
+}
+
+.product-title-text {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product-cards .product-card {
+  width: 940px;
+  height: 680px;
+  border-radius: 18px;
+}
+.product-cards .site {
+  background-color: #f7f7f7;
+}
+.product-cards .antivirus {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-title {
+  padding-top: 80px;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+}
+.product-title .product-icon {
+  fill: white;
+}
+.product-title p {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product-info {
+  width: 241px;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+.product-info .product-info-txt {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.product-learn-more {
+  font-size: 22px;
+  text-align: center;
+}
+.product-learn-more a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.product-image-antivirus {
+  height: 400px;
+  margin: 0 auto;
+  background-image: url(../img/5/antivirus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-title-site {
+  padding-top: 80px;
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+}
+.product-title-site .product-icon {
+  fill: black;
+}
+.product-title-site p {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product-info-site {
+  width: 320px;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+.product-info-site .product-info-txt {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
+.product-image-site {
+  height: 400px;
+  margin: 0 auto;
+  background-image: url(../img/5/icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
