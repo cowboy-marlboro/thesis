@@ -481,14 +481,23 @@ html{
         max-width: 536px;
         margin: 0 auto;
         padding: 80px 0px;
+        @media screen and (max-width: 664px){
+            padding: 60px 0px;
+        }
     }
     .style-title-black-card{
         color: white;
         text-align: center;
         font-size: 40px;
         font-weight: 600;
+            @media screen and (max-width: 664px){
+                font-size: 32px;
+                @media screen and (max-width: 360px){
+                    font-size: 24px;
+                }
+            }
+        }
     }
-}
 
 .row-cards-black{
     display: flex;
@@ -514,19 +523,39 @@ html{
                 font-weight: 600;
             }
         }
-        .txt-black-card li{
-            margin: 28px 0px;
-            font-size: 30px;
+        .txt-black-card{
+            li{
+                font-size: 30px;
+                margin: 28px 0px;
+                @media screen and(max-width:460px){
+                    font-size: 20px;
+                    margin: 28px 0px;
+                }
+            }
         }
-        .txt-black-card-two li{
-            margin: 28px 0px;
-            font-size: 30px;
-            width: 328px;
+        .txt-black-card-two{
+            li{
+                font-size: 30px;
+                margin: 28px 0px;
+                width: 328px;
+                @media screen and(max-width:460px){
+                    font-size: 20px;
+                    margin: 28px 0px;
+                    width: 228px;
+                }
+            }
         }
-        .txt-black-card-three li{
-            margin: 28px 0px;
-            font-size: 30px;
-            width: 319px;
+        .txt-black-card-three{
+            li{
+                font-size: 30px;
+                margin: 28px 0px;
+                width: 319px;
+                @media screen and(max-width:460px){
+                    font-size: 20px;
+                    margin: 28px 0px;
+                    width: 228px;
+                }
+            }
         }
     }
 }
@@ -534,6 +563,9 @@ html{
 
 .product-title-block{
     padding: 95px 0px;
+    @media screen and(max-width:1014px) {
+        padding: 65px 0px;
+    }
 }
 
 .product-title-text{
@@ -542,16 +574,24 @@ html{
     font-weight: 600;
     text-align: center;
     margin: 0 auto;
+    @media screen and(max-width:1014px) {
+        font-size: 32px;
+        @media screen and(max-width:814px){
+            font-size: 26px;
+        }
+    }
 }
 
 .product-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     .product-card{
-        width: 940px;
+        flex: 1 1 auto;
         height: 680px;
         border-radius: 18px;
+        @media screen and(max-width:1014px) {
+            flex: 1 1 100%;
+        }
     }
     .site{
         background-color: #f7f7f7;
@@ -569,6 +609,12 @@ html{
     padding-top: 80px;
     display: flex;
     width: 350px;
+    @media screen and (max-width: 664px){
+        width: 300px;
+        @media screen and (max-width: 360px){
+            width: 220px;
+        }
+    }
     margin: 0 auto;
     .product-icon{
         fill: white;
@@ -577,23 +623,45 @@ html{
         color: white;
         font-size: 32px;
         font-weight: 600;
+        @media screen and (max-width: 664px){
+            font-size: 26px;
+            @media screen and (max-width: 360px){
+                font-size: 20px;
+            }
+        }
     }
 }
 
+// КАРТОЧКА "Антивирусное ПО"
 .product-info{
-    width: 241px;
+    width: 300px;
+    @media screen and (max-width: 664px){
+        width: 250px;
+        @media screen and (max-width: 360px){
+            width: 220px;
+        }
+    }
     margin: 0 auto;
     padding: 15px 0px;
     .product-info-txt{
         text-align: center;
         color: white;
         font-size: 24px;
+            @media screen and (max-width: 360px){
+                font-size: 20px;
+            }
+        }
     }
-}
 
 .product-learn-more{
     font-size: 22px;
     text-align: center;
+    @media screen and (max-width: 664px){
+        font-size: 18px;
+        @media screen and (max-width: 360px){
+            font-size: 16px;
+        }
+    }
     a{
         color: #0066cc;
         text-decoration: underline
@@ -607,11 +675,19 @@ html{
     background-repeat: no-repeat;
     background-position: center;
 }
+// КАРТОЧКА "Антивирусное ПО"
 
+// КАРТОЧКА "Защита для сайта"
 .product-title-site{
     padding-top: 80px;
     display: flex;
-    width: 320px;
+    width: 350px;
+    @media screen and (max-width: 664px){
+        width: 280px;
+        @media screen and (max-width: 360px){
+            width: 220px;
+        }
+    }
     margin: 0 auto;
     .product-icon{
         fill:black;
@@ -620,17 +696,32 @@ html{
         color:black;
         font-size: 32px;
         font-weight: 600;
+        @media screen and (max-width: 664px){
+            font-size: 26px;
+            @media screen and (max-width: 360px){
+                font-size: 20px;
+            }
+        }
     }
 }
 
 .product-info-site{
     width: 320px;
+    @media screen and (max-width: 664px){
+        width: 300px;
+        @media screen and (max-width: 360px){
+            width: 280px;
+        }
+    }
     margin: 0 auto;
     padding: 15px 0px;
     .product-info-txt{
         text-align: center;
         color: black;
         font-size: 24px;
+        @media screen and (max-width: 360px){
+            font-size: 20px;
+        }
     }
 }
 
@@ -641,4 +732,4 @@ html{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+// КАРТОЧКА "Защита для сайта"

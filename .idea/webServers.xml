@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="61a4569d-05e5-4867-b9eb-68c0fc07ed8f" name="server" url="http://192.168.0.6">
+        <fileTransfer rootFolder="/home/i.galyamin" accessType="SFTP" host="192.168.0.6" port="22" sshConfigId="6ae0d7e9-8e48-450e-a7c5-28ec19ec990b" sshConfig="server">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
