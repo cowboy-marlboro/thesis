@@ -77,12 +77,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.lock {
+  overflow: hidden;
+}
+
+.fon {
+  height: 2000px;
+  background-image: url(https://funik.ru/wp-content/uploads/2019/01/536032883f94ba55ba72.jpg);
+  background-repeat: no-repeat;
+}
+
 .main-fon-nav {
   height: 48px;
 }
 
-.lock {
-  overflow: hidden;
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 .containerNav {
@@ -98,6 +109,7 @@ html {
 .wrapper {
   width: 100%;
   position: fixed;
+  z-index: 2;
   background: black;
 }
 
@@ -105,7 +117,12 @@ html {
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .row {
+    justify-content: space-around;
+  }
 }
 
 .list {
@@ -203,6 +220,7 @@ html {
 .drop-menu {
   display: none;
   position: absolute;
+  z-index: 2;
   top: 45px;
   width: 250px;
   background-color: white;
@@ -292,9 +310,43 @@ html {
   }
 }
 
-.container {
-  max-width: 1480px;
-  margin: 0 auto;
+.d-none {
+  display: none;
+}
+
+.pos-fix {
+  position: fixed;
+  width: 100%;
+}
+
+.secound-fon-nav {
+  height: 48px;
+}
+
+.secound-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(29, 29, 31, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+}
+.secound-wrapper .secound-row {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secound-wrapper .antivirusPO-txt {
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+}
+.secound-wrapper .antivirus-check-btn {
+  background-color: #1151d3;
+  border-radius: 18px;
+  color: white;
+  padding: 5px 6px;
 }
 
 .one {

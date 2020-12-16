@@ -1,7 +1,6 @@
 function сlick() {
     let userClick = document.querySelector('.user');
     let dropMenuClick = document.querySelector('.drop-menu');
-    let body = document.querySelector('body');
 
     userClick.onclick = () => {
         dropMenuClick.classList.toggle('d-block');
@@ -20,4 +19,6 @@ function getBurger() {
 }
 
 getBurger();
+
+
 

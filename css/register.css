@@ -96,7 +96,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .row {
+    justify-content: space-around;
+  }
 }
 
 .list {
@@ -444,4 +449,7 @@ h1, h2, h3, h4, h5, h6 {
 
 input[type=password]:invalid:focus {
   border: solid 2px red;
+  background-color: rgb(255, 234, 234);
+  position: relative;
+  z-index: -1;
 }

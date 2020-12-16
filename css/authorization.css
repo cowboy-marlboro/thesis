@@ -96,7 +96,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .row {
+    justify-content: space-around;
+  }
 }
 
 .list {
