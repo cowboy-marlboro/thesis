@@ -14,7 +14,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
     let txtBlock = document.querySelector('.txt-info-block');
@@ -53,3 +52,24 @@ window.addEventListener('scroll', () => {
         listContent.classList.remove('left-list-opacity');
     }
 });
+
+function getClick() {
+    let btnShow = document.querySelector('.antivirus-check-btn');
+    let hideBlock = document.querySelector('.main-hide-block');
+    let lock = document.querySelector('.hide');
+    let btnHide = document.querySelector('.btn-hide');
+
+    btnShow.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+    }
+
+    btnHide.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+    }
+
+}
+
+
+getClick();
