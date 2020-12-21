@@ -20,24 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd4e3c3-df95-440a-9fac-767abf8ec07c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/thesis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/img/Untitled-design-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/img/laptop.png" beforeDir="false" afterPath="$PROJECT_DIR$/layout/img/laptop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/img/web-security-shield-png-png-all-security-shield-png-2088_2339.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -71,6 +63,7 @@
       <workItem from="1607672295946" duration="2319000" />
       <workItem from="1607766659404" duration="3447000" />
       <workItem from="1607770122991" duration="702000" />
+      <workItem from="1608528405416" duration="191000" />
     </task>
     <servers />
   </component>
@@ -88,55 +81,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="183" key="#Deployment" timestamp="1607770727699">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" key="#Deployment/0.0.1920.1050@0.0.1920.1050" timestamp="1607770727699" />
-    <state x="637" y="206" key="#Options" timestamp="1607673979670">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="637" y="206" key="#Options/0.0.1920.1050@0.0.1920.1050" timestamp="1607673979670" />
-    <state x="536" y="170" key="#SSH_Configurations" timestamp="1607769050241">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="536" y="170" key="#SSH_Configurations/0.0.1920.1050@0.0.1920.1050" timestamp="1607769050241" />
-    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607673911020">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607673911020" />
-    <state x="711" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607768799923">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="711" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607768799923" />
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1607673705653">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607673705653" />
-    <state x="92" y="92" width="1736" height="866" key="DirDiffDialog" timestamp="1607768136020">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="92" y="92" width="1736" height="866" key="DirDiffDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607768136020" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1607673388411">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1607673388411" />
-    <state x="461" y="170" key="SettingsEditor" timestamp="1607674147938">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607674147938" />
-    <state x="824" y="255" key="ftp.server.browser" timestamp="1607770138248">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="824" y="255" key="ftp.server.browser/0.0.1920.1050@0.0.1920.1050" timestamp="1607770138248" />
-    <state x="830" y="416" key="publish.login" timestamp="1607672336884">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="830" y="416" key="publish.login/0.0.1920.1050@0.0.1920.1050" timestamp="1607672336884" />
-    <state x="769" y="392" key="webDeployment.PermissionsDialog" timestamp="1607673679797">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="769" y="392" key="webDeployment.PermissionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607673679797" />
   </component>
 </project>

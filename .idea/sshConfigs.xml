@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="192.168.0.6" id="6ae0d7e9-8e48-450e-a7c5-28ec19ec990b" port="22" customName="server" nameFormat="CUSTOM" username="i.galyamin">
+      <sshConfig authType="PASSWORD" host="192.168.0.6" id="6ae0d7e9-8e48-450e-a7c5-28ec19ec990b" port="22" customName="server" nameFormat="CUSTOM" username="retr0">
         <option name="customName" value="server" />
       </sshConfig>
     </configs>
