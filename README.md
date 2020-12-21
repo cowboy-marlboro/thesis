@@ -1,2 +1,2 @@
 # thesis
-This our thesis. It will be website about information security.
+This our thesis. It will be website about Information Security.
