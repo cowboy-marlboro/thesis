@@ -352,18 +352,214 @@ html {
 
 .main-hide-block {
   width: 100%;
-  height: 900px;
+  height: 100vh;
   background-color: #6b6b6be1;
-  padding: 120px 0px;
+  padding: 15vh 0px;
   display: none;
 }
 .main-hide-block .hide-block {
-  width: 1130px;
+  position: relative;
+  max-width: 1130px;
   height: 600px;
   background-color: white;
   border-radius: 20px;
   margin: 0 auto;
   box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-height: 960px) {
+  .main-hide-block .hide-block {
+    height: 550px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) {
+  .main-hide-block .hide-block {
+    height: 500px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) and (max-height: 860px) {
+  .main-hide-block .hide-block {
+    height: 450px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) {
+  .main-hide-block .hide-block {
+    height: 400px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) and (max-height: 760px) {
+  .main-hide-block .hide-block {
+    height: 350px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) and (max-height: 760px) and (max-height: 710px) {
+  .main-hide-block .hide-block {
+    height: 300px;
+  }
+}
+@media screen and (max-height: 960px) and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) and (max-height: 760px) and (max-height: 710px) and (max-height: 580px) {
+  .main-hide-block .hide-block {
+    top: -60px;
+  }
+}
+.main-hide-block .hide-block .btn-hide-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-hide-block .hide-block .btn-hide-block .btn-hide {
+  border-radius: 20px;
+  background: transparent;
+  padding: 7px 10px;
+}
+.main-hide-block .hide-block-content {
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+@media screen and (max-height: 910px) {
+  .main-hide-block .hide-block-content {
+    height: 450px;
+  }
+}
+@media screen and (max-height: 910px) and (max-height: 860px) {
+  .main-hide-block .hide-block-content {
+    height: 400px;
+  }
+}
+@media screen and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) {
+  .main-hide-block .hide-block-content {
+    height: 350px;
+  }
+}
+@media screen and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) and (max-height: 760px) {
+  .main-hide-block .hide-block-content {
+    height: 300px;
+  }
+}
+@media screen and (max-height: 910px) and (max-height: 860px) and (max-height: 810px) and (max-height: 760px) and (max-height: 710px) {
+  .main-hide-block .hide-block-content {
+    height: 250px;
+  }
+}
+.main-hide-block .flex-hide-block {
+  display: flex;
+  align-items: center;
+}
+.main-hide-block .flex-hide-block .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 15px;
+  min-width: 340px;
+  max-height: 400px;
+}
+.main-hide-block .flex-hide-block .block .hide-img-block {
+  width: 155px;
+  height: 217px;
+  background-image: url(../img/production/hide/kasp.png);
+}
+@media screen and (max-height: 860px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block {
+    width: 120px;
+    height: 168px;
+    background-image: url(../img/production/hide/kasp-m.png);
+  }
+}
+@media screen and (max-height: 860px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block {
+    width: 100px;
+    height: 140px;
+    background-image: url(../img/production/hide/kasp-m2.png);
+  }
+}
+.main-hide-block .flex-hide-block .block .hide-img-block1 {
+  width: 155px;
+  height: 217px;
+  background-image: url(../img/production/hide/avast.png);
+}
+@media screen and (max-height: 860px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block1 {
+    width: 120px;
+    height: 168px;
+    background-image: url(../img/production/hide/avast-m.png);
+  }
+}
+@media screen and (max-height: 860px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block1 {
+    width: 100px;
+    height: 140px;
+    background-image: url(../img/production/hide/avast-m2.png);
+  }
+}
+.main-hide-block .flex-hide-block .block .hide-img-block2 {
+  width: 155px;
+  height: 217px;
+  background-image: url(../img/production/hide/eset.png);
+}
+@media screen and (max-height: 860px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block2 {
+    width: 120px;
+    height: 168px;
+    background-image: url(../img/production/hide/eset-m.png);
+  }
+}
+@media screen and (max-height: 860px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .hide-img-block2 {
+    width: 100px;
+    height: 140px;
+    background-image: url(../img/production/hide/eset-m2.png);
+  }
+}
+.main-hide-block .flex-hide-block .block .txt-title-hide {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+@media screen and (max-height: 810px) {
+  .main-hide-block .flex-hide-block .block .txt-title-hide {
+    margin-top: 25px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-height: 810px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .txt-title-hide {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+}
+.main-hide-block .flex-hide-block .block .txt-main-title-hide {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+@media screen and (max-height: 810px) {
+  .main-hide-block .flex-hide-block .block .txt-main-title-hide {
+    font-size: 36px;
+  }
+}
+@media screen and (max-height: 810px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .txt-main-title-hide {
+    font-size: 32px;
+  }
+}
+.main-hide-block .flex-hide-block .block .txt-learn-more-hide {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 22px;
+  color: #1151d3;
+}
+@media screen and (max-height: 810px) {
+  .main-hide-block .flex-hide-block .block .txt-learn-more-hide {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-height: 810px) and (max-height: 710px) {
+  .main-hide-block .flex-hide-block .block .txt-learn-more-hide {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
 
 .lock {
@@ -439,7 +635,18 @@ html {
 .info-block {
   margin: 35px 0px;
 }
+@media screen and (max-width: 588px) {
+  .info-block {
+    margin: 30px 0px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 366px) {
+  .info-block {
+    margin: 20px 0px;
+  }
+}
 .info-block .txt-info-block {
+  padding: 0px 15px;
   position: relative;
   top: 100px;
   color: #9b9ba0;
@@ -451,6 +658,17 @@ html {
   transition: all 0.6s ease;
   opacity: 0;
 }
+@media screen and (max-width: 588px) {
+  .info-block .txt-info-block {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 366px) {
+  .info-block .txt-info-block {
+    font-size: 18px;
+  }
+}
 .info-block .top-opacity {
   position: relative;
   top: 0px;
@@ -459,6 +677,16 @@ html {
 
 .title-info-block {
   margin: 120px 0px;
+}
+@media screen and (max-width: 588px) {
+  .title-info-block {
+    margin: 100px 0px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 410px) {
+  .title-info-block {
+    margin: 50px 0px;
+  }
 }
 .title-info-block .txt-title-info-block {
   position: relative;
@@ -469,6 +697,17 @@ html {
   text-align: center;
   opacity: 0;
   transition: all 0.6s ease;
+}
+@media screen and (max-width: 588px) {
+  .title-info-block .txt-title-info-block {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 410px) {
+  .title-info-block .txt-title-info-block {
+    font-size: 24px;
+  }
 }
 .title-info-block .left-opacity {
   position: relative;
@@ -493,18 +732,42 @@ html {
   transition: all 0.6s ease;
 }
 .content-info .txt-content-info-block-title {
+  padding: 0px 15px;
   margin: 35px 0px;
   max-width: 832px;
   color: white;
   font-size: 24px;
   font-weight: 500;
 }
+@media screen and (max-width: 588px) {
+  .content-info .txt-content-info-block-title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 410px) {
+  .content-info .txt-content-info-block-title {
+    margin: 25px 0px;
+    font-size: 18px;
+  }
+}
 .content-info .content-list {
+  padding: 0px 15px;
   max-width: 820px;
   color: #a1a1a6;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+}
+@media screen and (max-width: 588px) {
+  .content-info .content-list {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 588px) and (max-width: 410px) {
+  .content-info .content-list {
+    line-height: 20px;
+    font-size: 14px;
+  }
 }
 .content-info .img-content-block {
   position: relative;
