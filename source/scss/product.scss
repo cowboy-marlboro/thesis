@@ -308,7 +308,7 @@ html{
                             @media screen and (max-height:710px){
                                 height: 300px;
                                 @media screen and (max-height:580px){
-                                    top: -60px;
+                                    top: -20px;
                                 }
                             }
                         }
@@ -330,7 +330,11 @@ html{
         overflow-y:auto;
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 500px;
+        @media screen and (max-width:895px){
+            justify-content: flex-start;
+        }
         @media screen and (max-height:910px){
             height: 450px;
             @media screen and (max-height:860px){
@@ -354,9 +358,13 @@ html{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0px 15px;
-                min-width: 340px;
+                margin: 0px 20px;
+                min-width: 320px;
                 max-height: 400px;
+                @media screen and (max-width:895px){
+                    min-width: 300px;
+                    margin: 0px 10px;
+                }
                 .hide-img-block{
                     width: 155px;
                     height: 217px;
