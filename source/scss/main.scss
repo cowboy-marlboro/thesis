@@ -599,11 +599,11 @@ html{
         .txt-black-card-three{
             li{
                 font-size: 30px;
-                margin: 28px 0px;
+                margin: 15px 0px;
                 width: 319px;
                 @media screen and(max-width:460px){
                     font-size: 20px;
-                    margin: 28px 0px;
+                    margin: 20px 0px;
                     width: 228px;
                 }
             }
@@ -757,7 +757,7 @@ html{
 }
 
 .product-info-site{
-    width: 320px;
+    width: 310px;
     @media screen and (max-width: 664px){
         width: 300px;
         @media screen and (max-width: 360px){
