@@ -16,10 +16,6 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 /* ----------------------------------------- */
 
-html{
-    scroll-behavior: smooth;
-    background-color: black;
-}
 
 .lock{
     overflow: hidden;
@@ -35,9 +31,8 @@ html{
     height: 48px;
 }
 
-.container{
-    max-width: 1480px;
-    margin: 0 auto;
+.container-fluid{
+    width: 100%;
 }
 
 .containerNav{
@@ -258,8 +253,10 @@ html{
     position: relative;
     z-index: 1;
     width: 100%;
-    background-color: rgba(29,29,31,0.72);
-    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px rgb(199, 199, 199) solid ;
+    background-color: white;
+    max-width: 1130px;
+    margin: 0 auto;
     .secound-row{
         height: 48px;
         display: flex;
@@ -267,9 +264,9 @@ html{
         justify-content: space-between;
     }
     .antivirusPO-txt{
-        color: white;
+        color: black;
         font-size: 21px;
-        font-weight: 500;
+        font-weight: 600;
     }
     .antivirus-check-btn{
         background-color: #1151d3;
@@ -460,4 +457,103 @@ html{
 
 .d-hide-block{
     display: block;
+}
+
+// ОСНОВНЫЕ СТИЛИ
+
+
+.content{
+    padding-top: 105px;
+}
+.content-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    .block{
+        width: 49.2%;
+        height: 410px;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and(max-width: 990px){
+            width: 99%;
+        }
+        .txt-title{
+            padding: 20px 0px;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            @media screen and(max-width: 530px) {
+                font-size: 28px;
+            }
+        }
+        .txt-description{
+            font-size: 18px;
+            text-align: center;
+        }
+        .learn-more-content{
+            font-size: 14px;
+            color: #2997ff;
+            padding: 20px 0px;
+            width: 280px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .img-block{
+            width: 389px;
+            height: 288px;
+            background-image: url(../img/service/admin.png);
+            background-repeat: no-repeat;
+        }
+        .img-block-site{
+            width: 297px;
+            height: 236px;
+            background-image: url(../img/service/site.png);
+            background-repeat: no-repeat;
+        }
+
+    }
+    .w{
+        background-color: #f5f5f7;
+        color: black;
+    }
+    .block-fluid{
+        width: 99%;
+        height: 410px;
+        background-color: #f5f5f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .txt-title{
+            padding: 20px 0px;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            @media screen and(max-width: 530px) {
+                font-size: 28px;
+            }
+        }
+        .txt-description{
+            font-size: 18px;
+            text-align: center;
+        }
+        .learn-more-content{
+            font-size: 14px;
+            color: #2997ff;
+            padding: 20px 0px;
+            width: 280px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .img-block{
+            width: 400px;
+            height: 227px;
+            background-image: url(../img/service/sec.png);
+            background-repeat: no-repeat;
+        }
+    }
 }
