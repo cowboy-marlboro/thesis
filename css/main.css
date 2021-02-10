@@ -723,13 +723,13 @@ html {
 }
 .row-cards-black .card-in-black .txt-black-card-three li {
   font-size: 30px;
-  margin: 28px 0px;
+  margin: 15px 0px;
   width: 319px;
 }
 @media screen and (max-width: 460px) {
   .row-cards-black .card-in-black .txt-black-card-three li {
     font-size: 20px;
-    margin: 28px 0px;
+    margin: 20px 0px;
     width: 228px;
   }
 }
@@ -909,7 +909,7 @@ html {
 }
 
 .product-info-site {
-  width: 320px;
+  width: 310px;
   margin: 0 auto;
   padding: 15px 0px;
 }

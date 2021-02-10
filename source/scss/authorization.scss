@@ -220,11 +220,13 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 
 
 body{
-    @media screen and(max-width:800px) {
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-block-auth{
+    padding-top: 50px;
 }
 
 .logo-text-block{
@@ -341,6 +343,7 @@ body{
 .prompt-txt{
     font-size: 13px;
     padding: 10px 0px;
+    text-align: center;
     @media screen and(max-width: 460px){
         width: 350px;
         text-align: center;

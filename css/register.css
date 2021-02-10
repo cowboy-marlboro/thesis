@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   width: 100%;
   position: fixed;
+  z-index: 1;
   background: black;
 }
 
@@ -288,12 +289,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+body {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-block-form {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  z-index: 0;
 }
 
 .logo-text-block {
@@ -449,7 +458,5 @@ h1, h2, h3, h4, h5, h6 {
 
 input[type=password]:invalid:focus {
   border: solid 2px red;
-  background-color: rgb(255, 234, 234);
-  position: relative;
-  z-index: -1;
+  background-color: rgba(255, 218, 218, 0.432);
 }
