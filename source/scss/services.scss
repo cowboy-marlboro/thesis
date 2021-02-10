@@ -285,7 +285,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
     display: none;
     .hide-block{
         position: relative;
-        max-width: 1130px;
+        max-width: 462px;
         height: 600px;
         background-color: white;
         border-radius: 20px;
@@ -502,18 +502,52 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
             width: 280px;
             display: flex;
             justify-content: space-between;
+            .txt-learn-more{
+                color: #2997ff;
+                font-size: 14px;
+                background: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .txt-send-two{
+                color: #2997ff;
+                font-size: 14px;
+                background: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .txt-send{
+                color: #2997ff;
+                font-size: 14px;
+                background: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
         .img-block{
             width: 389px;
             height: 288px;
             background-image: url(../img/service/admin.png);
             background-repeat: no-repeat;
+            @media screen and(max-width:410px){
+                background-image: url(../img/service/admin-m.png);
+                width: 270px;
+                height: 146px;
+            }
         }
         .img-block-site{
             width: 297px;
             height: 236px;
             background-image: url(../img/service/site.png);
             background-repeat: no-repeat;
+            @media screen and(max-width:410px){
+                background-image: url(../img/service/site-m.png);
+                width: 230px;
+                height: 183px;
+            }
         }
 
     }
@@ -543,17 +577,37 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
         }
         .learn-more-content{
             font-size: 14px;
-            color: #2997ff;
             padding: 20px 0px;
             width: 280px;
             display: flex;
             justify-content: space-between;
+            .txt-learn-more{
+                color: #2997ff;
+                font-size: 14px;
+                background: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .txt-send-three{
+                color: #2997ff;
+                font-size: 14px;
+                background: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
         .img-block{
             width: 400px;
             height: 227px;
             background-image: url(../img/service/sec.png);
             background-repeat: no-repeat;
+            @media screen and(max-width:410px){
+                background-image: url(../img/service/sec-m.png);
+                width: 300px;
+                height: 196px;
+            }
         }
     }
 }

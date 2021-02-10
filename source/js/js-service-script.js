@@ -13,4 +13,43 @@ window.addEventListener('scroll', () => {
     console.log(scrolled);
 });
 
+let btnShow = document.querySelector('.txt-send');
+let btnShow2 = document.querySelector('.txt-send-two');
+let btnShow3 = document.querySelector('.txt-send-three');
+let hideBlock = document.querySelector('.main-hide-block');
+let lock = document.querySelector('.hide');
+let btnHide = document.querySelector('.btn-hide');
 
+function getClick() {
+
+    btnShow.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+        const txtOne = document.querySelector('#some-txt');
+
+        txtOne.textContent = 'Сетевое администрирование.';
+    }
+    btnShow2.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+        const txtOne = document.querySelector('#some-txt');
+
+        txtOne.textContent = 'Создание сайтов.';
+    }
+    btnShow3.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+        const txtOne = document.querySelector('#some-txt');
+
+        txtOne.textContent = 'Обеспечение информационной безопасности.';
+    }
+
+    btnHide.onclick = () => {
+        hideBlock.classList.toggle('d-hide-block');
+        lock.classList.toggle('lock');
+    }
+
+}
+
+
+getClick();
