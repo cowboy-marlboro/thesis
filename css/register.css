@@ -396,6 +396,7 @@ body {
   }
 }
 .input .btn-input {
+  margin: 0px 0px 30px 0px;
   width: 460px;
   height: 60px;
   background-color: #0071e3;
@@ -436,6 +437,7 @@ body {
 .prompt-txt {
   font-size: 13px;
   padding: 10px 0px;
+  max-width: 460px;
 }
 @media screen and (max-width: 460px) {
   .prompt-txt {

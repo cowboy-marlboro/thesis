@@ -2,6 +2,17 @@
     text-align: center;
 }
 
+.form-block{
+    margin: 0 auto;
+    max-width: 462px;
+    @media screen and(max-width:460px){
+        max-width: 402px;
+        @media screen and(max-width:400px){
+            padding: 0px 10px;
+        }
+    }
+}
+
 .form{
     position: relative;
     z-index: 0;
@@ -16,14 +27,19 @@
         }
     }
     .logo-text{
-        font-size: 25px;
+        font-size: 32px;
         font-weight: 600;
         @media screen and(max-width:800px) {
-            font-size: 20px;
+            font-size: 26px;
+            @media screen and(max-width:424px){
+                font-size: 22px;
+            }
             @media screen and (max-width:280px){
                 text-align: center;
-                font-size: 30px;
             }
+        }
+        @media screen and(max-height:760px){
+            font-size: 18px;
         }
     }
 }
