@@ -8,20 +8,25 @@
 }
 
 .logo-text-block {
-  margin: 60px 0px;
+  margin: 50px 0px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-height: 810px) {
   .logo-text-block {
-    padding-top: 30px;
+    margin: 30px 0px;
+  }
+}
+@media screen and (max-height: 810px) and (max-height: 710px) {
+  .logo-text-block {
+    margin: 10px 0px;
   }
 }
 .logo-text-block .logo-text {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 600;
 }
 @media screen and (max-width: 800px) {
   .logo-text-block .logo-text {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 800px) and (max-width: 280px) {
@@ -52,6 +57,11 @@
   font-size: 20px;
   transition: 0.1s;
 }
+@media screen and (max-height: 810px) {
+  .input .input-login {
+    height: 50px;
+  }
+}
 .input .input-login:focus {
   border: 3px #0071e3 solid;
 }
@@ -59,6 +69,11 @@
   top: -22px;
   padding: 8px;
   font-size: 12px;
+}
+@media screen and (max-height: 810px) {
+  .input .input-login:focus ~ .form-label, .input .input-login:not(:placeholder-shown) ~ .form-label {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 460px) {
   .input .input-login {
@@ -107,6 +122,12 @@
   font-size: 20px;
   transition: 0.2s;
 }
+@media screen and (max-height: 810px) {
+  .input .btn-input {
+    height: 50px;
+    font-size: 18px;
+  }
+}
 .input .btn-input:hover {
   background-color: #2582df;
 }
@@ -129,6 +150,12 @@
   margin: 20px 10px;
   transition: 0.2s;
 }
+@media screen and (max-height: 810px) {
+  .input .form-label {
+    font-size: 16px;
+    margin: 18px 10px;
+  }
+}
 @media screen and (max-width: 280px) {
   .input .form-label {
     font-size: 16px;
@@ -138,6 +165,12 @@
 .prompt-txt {
   font-size: 13px;
   padding: 10px 0px;
+}
+@media screen and (max-height: 764px) {
+  .prompt-txt {
+    padding: 5px 0px;
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 460px) {
   .prompt-txt {

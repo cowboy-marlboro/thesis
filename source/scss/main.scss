@@ -636,6 +636,8 @@ html{
 .product-cards{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
     .product-card{
         flex: 1 1 auto;
         height: 680px;
@@ -648,7 +650,7 @@ html{
         background-color: #f7f7f7;
     }
     .antivirus{
-        background-color: black;
+        background-color: #f7f7f7;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -668,10 +670,10 @@ html{
     }
     margin: 0 auto;
     .product-icon{
-        fill: white;
+        fill: rgb(0, 0, 0);
     }
     p{
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 32px;
         font-weight: 600;
         @media screen and (max-width: 664px){
@@ -696,7 +698,7 @@ html{
     padding: 15px 0px;
     .product-info-txt{
         text-align: center;
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 24px;
             @media screen and (max-width: 360px){
                 font-size: 20px;
