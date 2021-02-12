@@ -89,19 +89,27 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   width: 100%;
   position: fixed;
+<<<<<<< HEAD
   background: black;
+=======
+  background: #3a3a3a;
+>>>>>>> back-end
 }
 
 .row {
   height: 48px;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
   .row {
     justify-content: space-around;
   }
+=======
+  justify-content: space-around;
+>>>>>>> back-end
 }
 
 .list {
@@ -114,9 +122,15 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: -100%;
     width: 100%;
+<<<<<<< HEAD
     min-height: 200px;
     background-color: black;
     transition: all 0.2s ease 0s;
+=======
+    height: 35%;
+    background-color: black;
+    transition: all 0.3s ease 0s;
+>>>>>>> back-end
   }
   .list.active {
     top: 46px;
@@ -288,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+<<<<<<< HEAD
 body {
   max-width: 100%;
   display: flex;
@@ -296,6 +311,13 @@ body {
 
 .main-block-auth {
   padding-top: 50px;
+=======
+@media screen and (max-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+>>>>>>> back-end
 }
 
 .logo-text-block {
@@ -315,12 +337,15 @@ body {
     font-size: 35px;
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 800px) and (max-width: 280px) {
   .logo-text-block .logo-text {
     text-align: center;
     font-size: 30px;
   }
 }
+=======
+>>>>>>> back-end
 
 .z-index {
   position: relative;
@@ -331,9 +356,12 @@ body {
   margin: 10px 0px;
   position: relative;
 }
+<<<<<<< HEAD
 .input input {
   padding: 15px;
 }
+=======
+>>>>>>> back-end
 .input .input-login {
   width: 460px;
   height: 60px;
@@ -347,8 +375,12 @@ body {
   border: 3px #0071e3 solid;
 }
 .input .input-login:focus ~ .form-label, .input .input-login:not(:placeholder-shown) ~ .form-label {
+<<<<<<< HEAD
   top: -22px;
   padding: 8px;
+=======
+  top: -15px;
+>>>>>>> back-end
   font-size: 12px;
 }
 @media screen and (max-width: 460px) {
@@ -358,7 +390,11 @@ body {
 }
 @media screen and (max-width: 460px) and (max-width: 400px) {
   .input .input-login {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 280px;
+>>>>>>> back-end
   }
 }
 .input .input-password {
@@ -374,8 +410,12 @@ body {
   border: 3px #0071e3 solid;
 }
 .input .input-password:focus ~ .form-label, .input .input-password:not(:placeholder-shown) ~ .form-label {
+<<<<<<< HEAD
   top: -22px;
   padding: 8px;
+=======
+  top: -15px;
+>>>>>>> back-end
   font-size: 12px;
 }
 @media screen and (max-width: 460px) {
@@ -385,7 +425,11 @@ body {
 }
 @media screen and (max-width: 460px) and (max-width: 400px) {
   .input .input-password {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 280px;
+>>>>>>> back-end
   }
 }
 .input .btn-input {
@@ -409,7 +453,11 @@ body {
 }
 @media screen and (max-width: 460px) and (max-width: 400px) {
   .input .btn-input {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 280px;
+>>>>>>> back-end
   }
 }
 .input .form-label {
@@ -421,16 +469,22 @@ body {
   margin: 20px 10px;
   transition: 0.2s;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 280px) {
   .input .form-label {
     font-size: 16px;
   }
 }
+=======
+>>>>>>> back-end
 
 .prompt-txt {
   font-size: 13px;
   padding: 10px 0px;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> back-end
 }
 @media screen and (max-width: 460px) {
   .prompt-txt {
@@ -440,6 +494,7 @@ body {
 }
 @media screen and (max-width: 460px) and (max-width: 400px) {
   .prompt-txt {
+<<<<<<< HEAD
     width: 100%;
     text-align: center;
   }
@@ -448,5 +503,8 @@ body {
   .prompt-txt {
     font-size: 10px;
     width: 100%;
+=======
+    width: 200px;
+>>>>>>> back-end
   }
 }
