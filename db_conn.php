@@ -3,8 +3,10 @@
 # Строка подключения к базе данных;
 $dbconn = pg_pconnect("host=10.2.1.13 port=5432 dbname=diplom user=postgres password=Beroslav43");
 
+
+# Проверка подключения;
 if ($dbconn){
-    echo "YES< BETCH";
+    echo "YES, BETCH";
 } else{
     echo "NO BETCH";
 }
