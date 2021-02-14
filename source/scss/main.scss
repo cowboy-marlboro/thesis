@@ -555,16 +555,20 @@ html{
     flex-wrap: wrap;
     justify-content: center;
     margin: 0px 10px;
+    column-gap: 10px;
     .card-in-black{
         flex: 1 1 auto;
-        margin: 10px 10px;
         border-radius: 18px;
-        width: 450px;
+        margin: 0px 0px 10px 0px;
+        width: 28%;
         height: 450px;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (max-width:1200px){
+            width: 450px;
+        }
         .icon-image{
             padding: 35px 0px;
         }
@@ -670,7 +674,18 @@ html{
     }
     margin: 0 auto;
     .product-icon{
+        padding: 4px 4px 0px 0px;
         fill: rgb(0, 0, 0);
+        @media screen and (max-width: 664px){
+            padding: 1px 2px 0px 0px;
+            transform: scale(0.9);
+            @media screen and (max-width: 360px){
+                position: relative;
+                top: -2px;
+                padding: 0px 0px 0px 0px;
+                transform: scale(0.7);
+            }
+        }
     }
     p{
         color: rgb(0, 0, 0);
@@ -700,8 +715,11 @@ html{
         text-align: center;
         color: rgb(0, 0, 0);
         font-size: 24px;
+        @media screen and (max-width: 664px){
+            font-size: 18px;
+        }
             @media screen and (max-width: 360px){
-                font-size: 20px;
+                font-size: 15px;
             }
         }
     }
@@ -712,7 +730,7 @@ html{
     @media screen and (max-width: 664px){
         font-size: 18px;
         @media screen and (max-width: 360px){
-            font-size: 16px;
+            font-size: 15px;
         }
     }
     a{
@@ -743,7 +761,18 @@ html{
     }
     margin: 0 auto;
     .product-icon{
+        padding: 4px 4px 0px 0px;
         fill:black;
+        @media screen and (max-width: 664px){
+            padding: 1px 2px 0px 0px;
+            transform: scale(0.9);
+            @media screen and (max-width: 360px){
+                position: relative;
+                top: -2px;
+                padding: 0px 0px 0px 0px;
+                transform: scale(0.7);
+            }
+        }
     }
     p{
         color:black;
@@ -772,11 +801,17 @@ html{
         text-align: center;
         color: black;
         font-size: 24px;
-        @media screen and (max-width: 360px){
-            font-size: 20px;
+        @media screen and (max-width: 664px){
+            font-size: 18px;
+        }
+            @media screen and (max-width: 360px){
+                margin: 0 auto;
+                width: 200px;
+                font-size: 15px;
+            }
         }
     }
-}
+
 
 .product-image-site{
     height: 400px;

@@ -678,17 +678,23 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px 10px;
+  column-gap: 10px;
 }
 .row-cards-black .card-in-black {
   flex: 1 1 auto;
-  margin: 10px 10px;
   border-radius: 18px;
-  width: 450px;
+  margin: 0px 0px 10px 0px;
+  width: 28%;
   height: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .row-cards-black .card-in-black {
+    width: 450px;
+  }
 }
 .row-cards-black .card-in-black .icon-image {
   padding: 35px 0px;
@@ -804,7 +810,22 @@ html {
   }
 }
 .product-title .product-icon {
+  padding: 4px 4px 0px 0px;
   fill: black;
+}
+@media screen and (max-width: 664px) {
+  .product-title .product-icon {
+    padding: 1px 2px 0px 0px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 664px) and (max-width: 360px) {
+  .product-title .product-icon {
+    position: relative;
+    top: -2px;
+    padding: 0px 0px 0px 0px;
+    transform: scale(0.7);
+  }
 }
 .product-title p {
   color: black;
@@ -842,9 +863,14 @@ html {
   color: black;
   font-size: 24px;
 }
+@media screen and (max-width: 664px) {
+  .product-info .product-info-txt {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 360px) {
   .product-info .product-info-txt {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -859,7 +885,7 @@ html {
 }
 @media screen and (max-width: 664px) and (max-width: 360px) {
   .product-learn-more {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .product-learn-more a {
@@ -892,7 +918,22 @@ html {
   }
 }
 .product-title-site .product-icon {
+  padding: 4px 4px 0px 0px;
   fill: black;
+}
+@media screen and (max-width: 664px) {
+  .product-title-site .product-icon {
+    padding: 1px 2px 0px 0px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 664px) and (max-width: 360px) {
+  .product-title-site .product-icon {
+    position: relative;
+    top: -2px;
+    padding: 0px 0px 0px 0px;
+    transform: scale(0.7);
+  }
 }
 .product-title-site p {
   color: black;
@@ -930,9 +971,16 @@ html {
   color: black;
   font-size: 24px;
 }
+@media screen and (max-width: 664px) {
+  .product-info-site .product-info-txt {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 360px) {
   .product-info-site .product-info-txt {
-    font-size: 20px;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 15px;
   }
 }
 

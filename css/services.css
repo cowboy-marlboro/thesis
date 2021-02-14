@@ -324,8 +324,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   border-bottom: 1px #c7c7c7 solid;
   background-color: white;
-  max-width: 1130px;
-  margin: 0 auto;
 }
 .secound-wrapper .secound-row {
   height: 48px;

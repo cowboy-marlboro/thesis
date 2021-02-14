@@ -249,14 +249,13 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
     height: 48px;
 }
 
+
 .secound-wrapper{
     position: relative;
     z-index: 1;
     width: 100%;
     border-bottom: 1px rgb(199, 199, 199) solid ;
     background-color: white;
-    max-width: 1130px;
-    margin: 0 auto;
     .secound-row{
         height: 48px;
         display: flex;

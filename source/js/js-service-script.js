@@ -10,7 +10,6 @@ window.addEventListener('scroll', () => {
         navBlock.classList.remove('d-none');
         navBlockTwo.classList.remove('pos-fix');
     }
-    console.log(scrolled);
 });
 
 let btnShow = document.querySelector('.txt-send');
