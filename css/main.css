@@ -104,7 +104,9 @@ html {
   width: 100%;
   position: fixed;
   z-index: 2;
-  background: black;
+  background-color: rgba(29, 29, 31, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
 }
 
 .row {
@@ -127,10 +129,10 @@ html {
   .list {
     display: block;
     position: fixed;
-    top: -100%;
+    top: -420%;
     width: 100%;
     min-height: 200px;
-    background-color: black;
+    background-color: #1d1d1f;
     transition: all 0.2s ease 0s;
   }
   .list.active {
@@ -263,18 +265,8 @@ html {
   .burger-menu {
     display: block;
     position: relative;
-    right: 15px;
-    width: 30px;
-    height: 20px;
-  }
-  .burger-menu span {
-    position: absolute;
-    background-color: #ffffff;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    transition: all 0.3s ease 0s;
+    width: 20px;
+    height: 10px;
   }
   .burger-menu:before, .burger-menu:after {
     content: "";
@@ -296,11 +288,11 @@ html {
   }
   .burger-menu.active:before {
     transform: rotate(45deg);
-    top: 9px;
+    top: 5px;
   }
   .burger-menu.active:after {
     transform: rotate(-45deg);
-    bottom: 9px;
+    bottom: 3px;
   }
 }
 
