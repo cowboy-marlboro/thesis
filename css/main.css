@@ -344,7 +344,7 @@ html {
 }
 
 .one {
-  background-image: url(../img/one/fon.png);
+  background-image: url(../img/main/one/fon.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -470,7 +470,7 @@ html {
   width: 735px;
   height: 635px;
   background-color: #f7f7f7;
-  background-image: url(../img/two/pnoneBlock.png);
+  background-image: url(../img/main/two/pnoneBlock.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 18px;
@@ -578,7 +578,7 @@ html {
   justify-content: center;
 }
 .block-card .card-image {
-  background-image: url(../img/3/macBook.png);
+  background-image: url(../img/main/3/macBook.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -669,10 +669,16 @@ html {
   column-gap: 10px;
 }
 .row-cards-black .img-one {
-  background-image: url(../layout/img/1.jpg);
+  background-image: url(../img/main/1.png);
 }
 .row-cards-black .img-two {
-  background-image: url(../layout/img/2.jpg);
+  background-image: url(../img/main/2.png);
+}
+.row-cards-black .img-three {
+  background-image: url(../img/main/3.png);
+}
+.row-cards-black .img-four {
+  background-image: url(../img/main/4.png);
 }
 .row-cards-black .card-in-black {
   flex: 1 1 auto;
@@ -681,6 +687,7 @@ html {
   height: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 1200px) {
@@ -688,48 +695,21 @@ html {
     width: 450px;
   }
 }
-.row-cards-black .card-in-black .icon-image {
-  padding: 35px 0px;
-}
 .row-cards-black .card-in-black .txt-title-black-card {
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 .row-cards-black .card-in-black .txt-title-black-card h3 {
   font-weight: 600;
 }
-.row-cards-black .card-in-black .txt-black-card li {
-  font-size: 30px;
-  margin: 28px 0px;
-}
-@media screen and (max-width: 460px) {
-  .row-cards-black .card-in-black .txt-black-card li {
-    font-size: 20px;
-    margin: 28px 0px;
-  }
-}
-.row-cards-black .card-in-black .txt-black-card-two li {
-  font-size: 30px;
-  margin: 28px 0px;
-  width: 328px;
-}
-@media screen and (max-width: 460px) {
-  .row-cards-black .card-in-black .txt-black-card-two li {
-    font-size: 20px;
-    margin: 28px 0px;
-    width: 228px;
-  }
-}
-.row-cards-black .card-in-black .txt-black-card-three li {
-  font-size: 30px;
-  margin: 15px 0px;
-  width: 319px;
-}
-@media screen and (max-width: 460px) {
-  .row-cards-black .card-in-black .txt-black-card-three li {
-    font-size: 20px;
-    margin: 20px 0px;
-    width: 228px;
-  }
+.row-cards-black .card-in-black .txt-block-black-card .txt-content-block-card {
+  max-width: 750px;
+  margin-top: 30px;
+  color: white;
+  font-size: 21px;
+  text-align: center;
 }
 
 .product-title-block {
@@ -889,7 +869,7 @@ html {
 .product-image-antivirus {
   height: 400px;
   margin: 0 auto;
-  background-image: url(../img/5/antivirus.png);
+  background-image: url(../img/main/5/antivirus.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -980,7 +960,7 @@ html {
 .product-image-site {
   height: 400px;
   margin: 0 auto;
-  background-image: url(../img/5/icon.png);
+  background-image: url(../img/main/5/icon.png);
   background-repeat: no-repeat;
   background-position: center;
 }
