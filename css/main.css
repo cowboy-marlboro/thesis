@@ -81,12 +81,6 @@ html {
   overflow: hidden;
 }
 
-.fon {
-  height: 2000px;
-  background-image: url(https://funik.ru/wp-content/uploads/2019/01/536032883f94ba55ba72.jpg);
-  background-repeat: no-repeat;
-}
-
 .main-fon-nav {
   height: 48px;
 }
@@ -640,35 +634,29 @@ html {
   }
 }
 
-.main-black-card {
-  margin: 100px 0px;
-  background-color: black;
-  border-radius: 18px;
-  min-height: 810px;
-}
-.main-black-card .title-black-card {
+.title-black-card {
   max-width: 536px;
   margin: 0 auto;
   padding: 80px 0px;
 }
 @media screen and (max-width: 664px) {
-  .main-black-card .title-black-card {
+  .title-black-card {
     padding: 60px 0px;
   }
 }
-.main-black-card .style-title-black-card {
-  color: white;
+
+.style-title-black-card {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
 }
 @media screen and (max-width: 664px) {
-  .main-black-card .style-title-black-card {
+  .style-title-black-card {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 664px) and (max-width: 360px) {
-  .main-black-card .style-title-black-card {
+  .style-title-black-card {
     font-size: 24px;
   }
 }
@@ -680,13 +668,17 @@ html {
   margin: 0px 10px;
   column-gap: 10px;
 }
+.row-cards-black .img-one {
+  background-image: url(../layout/img/1.jpg);
+}
+.row-cards-black .img-two {
+  background-image: url(../layout/img/2.jpg);
+}
 .row-cards-black .card-in-black {
   flex: 1 1 auto;
-  border-radius: 18px;
   margin: 0px 0px 10px 0px;
-  width: 28%;
-  height: 450px;
-  background-color: white;
+  width: 49.2%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -772,11 +764,12 @@ html {
   flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 10px;
+  margin: 10px;
+  padding-bottom: 10px;
 }
 .product-cards .product-card {
   flex: 1 1 auto;
   height: 680px;
-  border-radius: 18px;
 }
 @media screen and (max-width: 1014px) {
   .product-cards .product-card {
