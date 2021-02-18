@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ----------------------------------------- */
 html {
   scroll-behavior: smooth;
+  background-color: #f5f5f7;
 }
 
 .lock {
@@ -335,6 +336,10 @@ html {
   padding: 5px 6px;
 }
 
+#two {
+  background-color: #f5f5f7;
+}
+
 .one {
   background-image: url(../img/main/one/fon.png);
   background-position: center;
@@ -395,18 +400,13 @@ html {
 }
 
 .main-title {
-  padding-top: 100px;
+  padding: 55px 0px;
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 449px) {
   .main-title {
-    padding-top: 50px;
-  }
-}
-@media screen and (max-width: 662px) and (max-width: 366px) {
-  .main-title {
-    padding-top: 30px;
+    padding: 35px 0px;
   }
 }
 
@@ -414,36 +414,47 @@ html {
   text-align: center;
 }
 .text-title-block .text-title-main {
+  padding: 0px 10px;
   font-size: 40px;
   color: black;
   font-weight: 600;
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 682px) {
   .text-title-block .text-title-main {
-    max-width: 633px;
     font-size: 30px;
   }
 }
-@media screen and (max-width: 662px) and (max-width: 366px) {
+@media screen and (max-width: 682px) and (max-width: 517px) {
   .text-title-block .text-title-main {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 .text-title-block .text-title-w {
+  padding: 0px 10px;
   padding-top: 25px;
-  max-width: 633px;
+  max-width: 833px;
   margin: 0 auto;
-  font-size: 28px;
+  font-size: 21px;
   color: black;
 }
 @media screen and (max-width: 662px) {
   .text-title-block .text-title-w {
-    font-size: 22px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 662px) and (max-width: 517px) {
+  .text-title-block .text-title-w {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 662px) and (max-width: 449px) {
+  .text-title-block .text-title-w {
+    padding-top: 15px;
   }
 }
 @media screen and (max-width: 662px) and (max-width: 366px) {
   .text-title-block .text-title-w {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -452,24 +463,28 @@ html {
 }
 
 .block-cards {
-  padding: 70px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .block-cards {
+    margin: 0px 10px;
+  }
 }
 .block-cards .one-card {
-  margin: 0px 5px 0px 0px;
-  width: 735px;
-  height: 635px;
-  background-color: #f7f7f7;
+  width: 49.2%;
+  height: 600px;
+  background-color: white;
   background-image: url(../img/main/two/pnoneBlock.png);
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 18px;
 }
-@media screen and (max-width: 1479px) {
+@media screen and (max-width: 1200px) {
   .block-cards .one-card {
-    margin: 0px 0px 0px 0px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 305px) {
@@ -478,18 +493,16 @@ html {
   }
 }
 .block-cards .two-card {
-  margin: 0px 0px 0px 5px;
-  width: 735px;
-  height: 635px;
+  width: 49.2%;
+  height: 600px;
   background-color: black;
-  border-radius: 18px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 1479px) {
+@media screen and (max-width: 1200px) {
   .block-cards .two-card {
-    margin: 10px 0px 0px 0px;
+    width: 100%;
   }
 }
 .block-cards .two-card .info-title {
@@ -531,11 +544,9 @@ html {
 }
 
 .block-card {
-  margin: 60px 0px;
   width: 100%;
   min-height: 680px;
-  background-color: #f7f7f7;
-  border-radius: 18px;
+  background-color: white;
 }
 @media screen and (max-width: 620px) {
   .block-card {
@@ -627,13 +638,13 @@ html {
 }
 
 .title-black-card {
-  max-width: 536px;
+  max-width: 490px;
   margin: 0 auto;
-  padding: 80px 0px;
+  padding: 55px 20px;
 }
-@media screen and (max-width: 664px) {
+@media screen and (max-width: 682px) {
   .title-black-card {
-    padding: 60px 0px;
+    padding: 35px 0px;
   }
 }
 
@@ -642,14 +653,14 @@ html {
   font-size: 40px;
   font-weight: 600;
 }
-@media screen and (max-width: 664px) {
+@media screen and (max-width: 682px) {
   .style-title-black-card {
-    font-size: 32px;
+    font-size: 35px;
   }
 }
-@media screen and (max-width: 664px) and (max-width: 360px) {
+@media screen and (max-width: 682px) and (max-width: 390px) {
   .style-title-black-card {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -658,7 +669,13 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px 10px;
+  row-gap: 10px;
   column-gap: 10px;
+}
+@media screen and (max-width: 623px) {
+  .row-cards-black {
+    margin: 0px 0px;
+  }
 }
 .row-cards-black .img-one {
   background-image: url(../img/main/1.png);
@@ -674,7 +691,6 @@ html {
 }
 .row-cards-black .card-in-black {
   flex: 1 1 auto;
-  margin: 0px 0px 10px 0px;
   width: 49.2%;
   height: 600px;
   display: flex;
@@ -682,9 +698,9 @@ html {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 623px) {
   .row-cards-black .card-in-black {
-    width: 450px;
+    width: 100%;
   }
 }
 .row-cards-black .card-in-black .txt-title-black-card {
@@ -705,7 +721,7 @@ html {
 }
 
 .product-title-block {
-  padding: 95px 0px;
+  padding: 55px 0px;
 }
 @media screen and (max-width: 1014px) {
   .product-title-block {
@@ -749,10 +765,10 @@ html {
   }
 }
 .product-cards .site {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 .product-cards .antivirus {
-  background-color: #f7f7f7;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -950,9 +966,9 @@ html {
 }
 
 .product-image-site {
-  height: 400px;
+  height: 450px;
   margin: 0 auto;
-  background-image: url(../img/main/5/icon.png);
+  background-image: url(../img/main/5/macbook.png);
   background-repeat: no-repeat;
   background-position: center;
 }

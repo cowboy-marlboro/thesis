@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 
 html{
     scroll-behavior: smooth;
+    background-color: #f5f5f7;
 }
 
 .lock{
@@ -264,6 +265,10 @@ html{
 }
 //СТИЛИ ШАПКИ
 
+#two{
+    background-color: #f5f5f7;
+}
+
 .one{
     background-image: url(../img/main/one/fon.png);
     background-position: center;
@@ -316,42 +321,46 @@ html{
 
 
 .main-title{
-    padding-top: 100px;
+    padding: 55px 0px;
     display: flex;
     justify-content: center;
-    @media screen and(max-width:662px){
-        padding-top: 50px;
-        @media screen and(max-width: 366px){
-            padding-top: 30px;
-        }
+    @media screen and(max-width: 449px){
+        padding: 35px 0px;
     }
 }
 
 .text-title-block{
     text-align: center;
     .text-title-main{
+        padding: 0px 10px;
         font-size: 40px;
         color: black;
         font-weight: 600;
-        @media screen and(max-width:662px){
-            max-width: 633px;
+        @media screen and(max-width:682px){
             font-size: 30px;
-            @media screen and(max-width: 366px){
-                font-size: 24px;
+            @media screen and(max-width:517px){
+                font-size: 26px;
             }
         }
     }
     .text-title-w{
+        padding: 0px 10px;
         @media screen and(max-width:662px){
-            font-size: 22px;
+            font-size: 18px;
+            @media screen and(max-width:517px){
+                font-size: 16px;
+            }
+            @media screen and(max-width: 449px){
+                padding-top: 15px;
+            }
             @media screen and(max-width: 366px){
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         padding-top: 25px;
-        max-width: 633px;
+        max-width: 833px;
         margin: 0 auto;
-        font-size: 28px;
+        font-size: 21px;
         color: black;
     }
 }
@@ -361,38 +370,38 @@ html{
 }
 
 .block-cards{
-    padding: 70px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    @media screen and (max-width:1200px){
+        margin: 0px 10px;
+    }
     .one-card{
-        margin: 0px 5px 0px 0px;
-        @media screen and(max-width:1479px){
-            margin: 0px 0px 0px 0px;
-        }
-        width: 735px;
-        height: 635px;
-        background-color: #f7f7f7;
+        width: 49.2%;
+        height: 600px;
+        background-color: white;
         background-image: url(../img/main/two/pnoneBlock.png);
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (max-width:1200px){
+            width: 100%;
+        }
         @media screen and (max-width:305px){
             background-size: contain;
         }
-        border-radius: 18px;
     }
     .two-card{
-        @media screen and(max-width:1479px){
-            margin: 10px 0px 0px 0px;
-        }
-        margin: 0px 0px 0px 5px;
-        width: 735px;
-        height: 635px;
+        width: 49.2%;
+        height: 600px;
         background-color: black;
-        border-radius: 18px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        @media screen and (max-width:1200px){
+            width: 100%;
+        }
         .info-title{
             max-width: 580px;
             margin: 0 auto;
@@ -426,14 +435,12 @@ html{
 }
 
 .block-card{
-    margin: 60px 0px;
     width: 100%;
     min-height: 680px;
     @media screen and(max-width:620px){
         min-height: 480px;
     }
-    background-color: #f7f7f7;
-    border-radius: 18px;
+    background-color: white;    
     .card-title{
         display: flex;
         justify-content: center;
@@ -511,32 +518,35 @@ html{
 
 
 .title-black-card{
-    max-width: 536px;
+    max-width: 490px;
     margin: 0 auto;
-    padding: 80px 0px;
-    @media screen and (max-width: 664px){
-        padding: 60px 0px;
+    padding: 55px 20px;
+    @media screen and (max-width: 682px){
+        padding: 35px 0px;
     }
 }
 .style-title-black-card{
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-        @media screen and (max-width: 664px){
-            font-size: 32px;
-            @media screen and (max-width: 360px){
-                font-size: 24px;
-            }
+    @media screen and (max-width: 682px){
+        font-size: 35px;
+        @media screen and (max-width: 390px){
+            font-size: 26px;
         }
     }
-
+    }
 
 .row-cards-black{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0px 10px;
+    row-gap: 10px;
     column-gap: 10px;
+    @media screen and(max-width:623px){
+        margin: 0px 0px;
+    }
     .img-one{
         background-image: url(../img/main/1.png);
     }
@@ -551,15 +561,14 @@ html{
     }
     .card-in-black{
         flex: 1 1 auto;
-        margin: 0px 0px 10px 0px;
         width: 49.2%;
         height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width:1200px){
-            width: 450px;
+        @media screen and(max-width:623px){
+            width: 100%;
         }
         .txt-title-black-card{
             font-size: 40px;
@@ -584,7 +593,7 @@ html{
 
 
 .product-title-block{
-    padding: 95px 0px;
+    padding: 55px 0px;
     @media screen and(max-width:1014px) {
         padding: 65px 0px;
     }
@@ -619,10 +628,10 @@ html{
         }
     }
     .site{
-        background-color: #f7f7f7;
+        background-color: #fff;
     }
     .antivirus{
-        background-color: #f7f7f7;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -782,9 +791,9 @@ html{
 
 
 .product-image-site{
-    height: 400px;
+    height: 450px;
     margin: 0 auto;
-    background-image: url(../img/main/5/icon.png);
+    background-image: url(../img/main/5/macbook.png);
     background-repeat: no-repeat;
     background-position: center;
 }
