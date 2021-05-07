@@ -293,16 +293,23 @@ body {
 }
 @media screen and (max-width: 800px) {
   .logo-text-block {
-    padding-top: 30px;
+    margin: 50px 0px;
   }
 }
 .logo-text-block .logo-text {
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .logo-text-block .logo-text {
     font-size: 35px;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 460px) {
+  .logo-text-block .logo-text {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 800px) and (max-width: 280px) {

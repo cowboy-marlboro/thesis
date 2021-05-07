@@ -300,7 +300,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .logo-text-block {
-    padding-top: 30px;
+    margin: 40px 0px;
   }
 }
 .logo-text-block .logo-text {

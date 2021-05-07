@@ -608,9 +608,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   color: #2997ff;
   padding: 20px 0px;
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 .content-row .block .learn-more-content .txt-learn-more {
   color: #2997ff;
@@ -705,6 +703,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 .content-row .block-fluid .learn-more-content .txt-send-three {
+  text-align: center;
+  width: 280px;
   color: #2997ff;
   font-size: 14px;
   background: transparent;
