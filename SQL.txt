@@ -1,0 +1,22 @@
+CREATE TABLE Students (id smallint UNSIGNED AUTO_INCREMENT,
+                        FIO varchar (100 ) NOT NULL,
+                        group_number varchar( 100 ) NOT NULL,
+                        phone_nomber varchar( 100 ) NOT NULL,
+                        PRIMARY KEY (id));
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("1", "Иванов, И.", "17SPI1", "88005553536");  
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("2", "Маточкин, А", "17SPI1", "88005553537"); 
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("3", "Голямин, И", "17SPI2", "88005553538");  
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("4", "Микова, Л", "17SPI2", "88005553539");  
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("5", "Городилов, Я", "17SPI2", "88005553540");  
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("6", "Имашев, И", "17SPI1", "88005553541");  
+INSERT INTO Students (ID, FIO, group_number, phone_nomber) VALUES ("7", "Стельмах, А", "17SPI1", "88005553542");  
+
+CREATE TABLE Teachers (id smallint UNSIGNED AUTO_INCREMENT,
+                        FIO varchar (100 ) NOT NULL,
+                        Predmet varchar( 100 ) NOT NULL,
+                        phone_nomber varchar( 100 ) NOT NULL,
+                        PRIMARY KEY (id));
+INSERT INTO Teachers (ID, FIO, Predmet, phone_nomber) VALUES ("1", "Финский, A", "СопрПООН", "84562153212321");  
+INSERT INTO Teachers (ID, FIO, Predmet, phone_nomber) VALUES ("2", "Гуляева, Е", "Математика", "84562153212321");  
+INSERT INTO Teachers (ID, FIO, Predmet, phone_nomber) VALUES ("3", "Косихина, В", "История", "84562153212321");  
+INSERT INTO Teachers (ID, FIO, Predmet, phone_nomber) VALUES ("4", "Родина, К", "Менеджмент", "84562153212321");  
